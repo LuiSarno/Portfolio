@@ -1,7 +1,69 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+header{
+  background-color: #262626;
+}
 
+li{
+  list-style: none;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color:dodgerblue;
+
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display:block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 
 section {
     
@@ -26,26 +88,7 @@ footer {
     padding: 80px;
 }
 
-nav {
-    display:flex;
-    justify-content: space-between;
 
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
-
-
-
-li {
-    /*width: 200px; */
-    text-decoration: none;
-}
 
 h1 {
     font-size: 90px;
@@ -101,10 +144,6 @@ p {
     padding-bottom: 200px;
 }
 
-.logo{
-    height: 150px;
-    margin: 2px;
-}
 
 .social {
     margin: 20px;
@@ -175,10 +214,6 @@ hr {
      color: #ef744b;
 }
 
-a {
-    text-decoration: none;
-    color: white
-}
 
 .contact-form {
     width: 25%; /* adjust as needed */
@@ -234,46 +269,41 @@ a {
       width: 90%;
       font-size: 12px;
     }
+}
+
+@media(max-width:768px){
+  .hamburger{
+    display: block;
   }
 
-  .hamburger {
-    display: none;
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
 
   }
-  .hamburger:focus{
-    outline: 0;
+  .nav-item{
+    margin: 16px 0;
   }
 
-  @media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    
-      }
-      
-      ul{
-        display: none;
-        background-color: #1c1d25;
-        margin: 0px;
-      }
-     
-      nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #1c1d25;
-      }
-      
-      ul.show {
-        display: block;
-    }
-
-      .logo {
-        display: none;
-      }
-
+  .nav-menu.active{
+    left: 0;
   }
+}
+
+

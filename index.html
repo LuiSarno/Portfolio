@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/2358651f24.js" crossorigin="anonymous"></script>
+
 
     <title>Portfolio</title>
-    <meta charset="UTF-8" />
   </head>
+ 
   <body>
-    
-    <section class="hero">
-        <nav>
-            <img class="logo" src="src/images/logo2.png" alt="Luis Sarno's logo"/>
-            <ul id="nav-list">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
+   
+        <header>
+ 
+          <nav class="navbar">
+            <a href="#" class=""nav-branding'>Logo</a>
+           
+                <ul class="nav-menu">
+               <li class="nav-item">
+                 <a href="#about-me" class="nav-link">About me</a>   
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+               <li class="nav-item">
+                 <a href="#contact" class="nav-link">Contact</a>
+                </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </nav>
+       
+        <section class="hero">
+        
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Luis Sarno</h1>
@@ -50,6 +65,8 @@
             <img class="headshot" src="src/images/headshot.jpg" alt="Luis Sarno headshot"/>
         </div>
     </section>
+
+    </header>
     <section class="sub-section-alt" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
@@ -93,6 +110,6 @@
             <input type="submit" value="Submit">
         </form>
     </footer>
-    <scirpt src="src/app.js"></scirpt>
+    <scirpt src="src/script.js"></scirpt>
   </body>
 </html>
