@@ -8,36 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+
 
     <title>Portfolio</title>
   </head>
+ 
   <body>
+   
+        <header>
  
           <nav class="navbar">
-            <div class="logo_header">
-                <a href="#" class="logo">Logo</a>
-
-                <button class="navbar_toggle">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-        
+            <a href="#" class=""nav-branding'>Logo</a>
            
-                <ul class="main_nav">
-               <li>
-                 <a href="#about-me" class="nav_links">About me</a>   
-                <li>
-                    <a href="#projects" class="nav_links">Projects</a>
+                <ul class="nav-menu">
+               <li class="nav-item">
+                 <a href="#about-me" class="nav-link">About me</a>   
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
-               <li>
-                 <a href="#contact" class="nav_links">Contact</a>
+               <li class="nav-item">
+                 <a href="#contact" class="nav-link">Contact</a>
                 </li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </nav>
        
-       
         <section class="hero">
+        
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Luis Sarno</h1>
@@ -64,6 +65,8 @@
             <img class="headshot" src="src/images/headshot.jpg" alt="Luis Sarno headshot"/>
         </div>
     </section>
+
+    </header>
     <section class="sub-section-alt" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
@@ -107,6 +110,6 @@
             <input type="submit" value="Submit">
         </form>
     </footer>
-    <scirpt src="src/app.js"></scirpt>
+    <scirpt src="src/script.js"></scirpt>
   </body>
 </html>
